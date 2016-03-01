@@ -1,0 +1,6 @@
+*.secret
+*.egg-info
+*.pyc
+*.pyo
+*.mo
+dist
