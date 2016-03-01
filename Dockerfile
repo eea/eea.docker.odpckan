@@ -5,8 +5,9 @@ RUN apt-get update && \
     apt-get install -y python3-pip git && \
     pip3 install chaperone
 
-#create specific user
-RUN useradd -u 500 -m -s /bin/bash odpckan
+#create group and user
+RUN groupadd -g 999 odpckan && \
+    useradd  -g 999 -u 999 -m -s /bin/bash odpckan
 
 #deploy odpckan
 RUN git clone https://github.com/eea/eea.odpckan.git && \
