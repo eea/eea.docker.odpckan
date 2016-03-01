@@ -17,6 +17,16 @@ Clone the repository
     $ git clone https://github.com/eea/eea.docker.odpckan.git
     $ cd eea.docker.odpckan
 
+During the first time deployement, create and edit the secret file
+
+    $ cp .secret.example .secret
+    $ vim .secret
+    $ # edit connection for both RabbitMQ and CKAN services
+
+## Usage
+
+work in progress
+
 ## Copyright and license
 
 The Initial Owner of the Original Code is European Environment Agency (EEA).

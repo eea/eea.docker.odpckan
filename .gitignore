@@ -1,4 +1,4 @@
-*.secret
+.secret
 *.egg-info
 *.pyc
 *.pyo

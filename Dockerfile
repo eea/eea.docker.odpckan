@@ -1,4 +1,4 @@
-FROM python:2
+FROM python:2-slim
 
 #install git and chaperone
 RUN apt-get update && \
@@ -7,12 +7,12 @@ RUN apt-get update && \
 
 #create group and user
 RUN groupadd -g 999 odpckan && \
-    useradd  -g 999 -u 999 -m -s /bin/bash odpckan
+    useradd -g 999 -u 999 -m -s /bin/bash odpckan
 
 #deploy odpckan
 RUN git clone https://github.com/eea/eea.odpckan.git && \
-    pip install -r /eea.odpckan/requirements.txt && \
-    cp /eea.odpckan/.secret.example /eea.odpckan/.secret
+    pip install -r /eea.odpckan/requirements.txt
+COPY .secret /eea.odpckan/.secret
 
 #setup chaperone
 RUN mkdir -p /etc/chaperone.d
