@@ -17,8 +17,10 @@ COPY .secret /eea.odpckan/.secret
 #setup chaperone
 RUN mkdir -p /etc/chaperone.d
 COPY chaperone.conf /etc/chaperone.d/chaperone.conf
-
 USER odpckan
 
+#set working folder and start service
 WORKDIR /eea.odpckan
+
 ENTRYPOINT ["/usr/local/bin/chaperone"]
+CMD ["--user", "odpckan"]
