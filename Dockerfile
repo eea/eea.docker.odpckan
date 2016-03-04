@@ -13,14 +13,13 @@ RUN groupadd -g 999 odpckan && \
 RUN git clone https://github.com/eea/eea.odpckan.git && \
     pip install -r /eea.odpckan/requirements.txt
 COPY .secret /eea.odpckan/.secret
+RUN chown -R odpckan:odpckan /eea.odpckan
 
 #setup chaperone
 RUN mkdir -p /etc/chaperone.d
 COPY chaperone.conf /etc/chaperone.d/chaperone.conf
-USER odpckan
 
-#set working folder and start service
-WORKDIR /eea.odpckan
+USER odpckan
 
 ENTRYPOINT ["/usr/local/bin/chaperone"]
 CMD ["--user", "odpckan"]
