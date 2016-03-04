@@ -12,7 +12,6 @@ RUN groupadd -g 999 odpckan && \
 #deploy odpckan
 RUN git clone https://github.com/eea/eea.odpckan.git && \
     pip install -r /eea.odpckan/requirements.txt
-COPY .secret /eea.odpckan/.secret
 RUN chown -R odpckan:odpckan /eea.odpckan
 
 #setup chaperone
