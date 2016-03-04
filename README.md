@@ -9,6 +9,7 @@ Docker orchestration for EEA [**ODP CKAN**](https://github.com/eea/eea.odpckan)
 ## Prerequisites
 
 - Install [Docker](https://docs.docker.com/installation/)
+- Install [Compose](https://docs.docker.com/compose/install/)
 
 ## Installation
 
