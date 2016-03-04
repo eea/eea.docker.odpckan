@@ -23,9 +23,10 @@ During the first time deployement, create and edit the secret file
     $ vim .secret
     $ # edit connection for both RabbitMQ and CKAN services
 
-## Usage
+Start container
 
-work in progress
+    $ docker-compose up -d
+    $ docker-compose logs
 
 ## Copyright and license
 
