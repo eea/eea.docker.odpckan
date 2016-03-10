@@ -2,4 +2,4 @@ odpckan:
     image: docker.io/eeacms/odpckan
     restart: always
     volumes:
-        - ./.secret:/eea.odpckan/.secret:ro
+        - ./.secret:/eea.odpckan/.secret:z
