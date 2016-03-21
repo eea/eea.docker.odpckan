@@ -23,6 +23,8 @@ During the first time deployement, create and edit the secret file
     $ cp .secret.example .secret
     $ vim .secret
     $ # edit connection for both RabbitMQ and CKAN services
+    $ # for RabbitMQ use internal interface IP (e.g. 10.46.104.47) if
+    $ # the RabittMQ service is deployed on the same machine
 
 Start container
 
