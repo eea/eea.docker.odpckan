@@ -2,4 +2,5 @@ odpckan:
     image: docker.io/eeacms/odpckan
     restart: always
     volumes:
+        - /etc/localtime:/etc/localtime:ro
         - ./.secret:/eea.odpckan/.secret:z
