@@ -1,5 +1,5 @@
 odpckan:
-    image: docker.io/eeacms/odpckan
+    image: docker.io/eeacms/odpckan:v1.0-rc1
     restart: always
     volumes:
         - /etc/localtime:/etc/localtime:ro
