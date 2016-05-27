@@ -8,6 +8,7 @@ odpckan:
         - SERVICES_EEA=http://www.eea.europa.eu/data-and-maps/data
         - SERVICES_SDS=http://semantic.eea.europa.eu/sparql
         - SERVICES_ODP=https://open-data.europa.eu/en/data/publisher/eea
+        - CKANCLIENT_INTERVAL=0 */3 * * *
     volumes:
         - /etc/localtime:/etc/localtime:ro
         - ./.secret:/eea.odpckan/.secret:z
