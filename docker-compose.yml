@@ -12,4 +12,4 @@ odpckan:
         - CKANCLIENT_INTERVAL_BULK=0 0 * * 0
     volumes:
         - /etc/localtime:/etc/localtime:ro
-        - ./.secret:/eea.odpckan/.secret:z
+        - ./.secret:/eea.odpckan/app/.secret:z
