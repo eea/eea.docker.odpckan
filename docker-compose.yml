@@ -1,13 +1,13 @@
 odpckan:
-    image: docker.io/eeacms/odpckan:v1.1
+    image: docker.io/eeacms/odpckan:v1.2
     restart: always
     environment:
         - RABBITMQ_HOST=10.128.0.22
         - RABBITMQ_PORT=5672
-        - CKAN_ADDRESS=https://open-data.europa.eu/en/data
+        - CKAN_ADDRESS=http://data.europa.eu/euodp/data/
         - SERVICES_EEA=http://www.eea.europa.eu/data-and-maps/data
         - SERVICES_SDS=http://semantic.eea.europa.eu/sparql
-        - SERVICES_ODP=https://open-data.europa.eu/en/data/publisher/eea
+        - SERVICES_ODP=http://data.europa.eu/euodp/data/publisher/eea
         - CKANCLIENT_INTERVAL=0 */3 * * *
         - CKANCLIENT_INTERVAL_BULK=0 0 * * 0
     volumes:
