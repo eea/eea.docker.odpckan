@@ -1,5 +1,5 @@
 odpckan:
-    image: docker.io/eeacms/odpckan:v1.2
+    image: docker.io/eeacms/odpckan:v1.3
     restart: always
     environment:
         - RABBITMQ_HOST=10.128.0.22
