@@ -1,3 +1,6 @@
+# OBSOLETE - orchestration moved to EEA Rancher catalog
+ - see ["EEA - ODP CKAN" Rancher catalog template](https://github.com/eea/eea.rancher.catalog/blob/master/templates/odp-ckan)
+
 # ODP CKAN Docker orchestration for EEA
 
 Docker orchestration for EEA [**ODP CKAN**](https://github.com/eea/eea.odpckan)
